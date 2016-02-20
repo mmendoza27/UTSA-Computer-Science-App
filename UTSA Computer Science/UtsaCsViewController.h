@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UtsaCsViewController : UIViewController
+@interface UtsaCsViewController : UITabBarController
 
 @end

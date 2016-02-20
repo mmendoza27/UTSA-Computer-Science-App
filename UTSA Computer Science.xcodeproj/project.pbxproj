@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3C114ABFE074F1E866B2865 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A978FB0C3116440B821D3D44 /* libPods.a */; };
+		EE64EA9318E138D700C3EEA8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE64EA9218E138D700C3EEA8 /* SystemConfiguration.framework */; };
+		EE64EA9618E13B2300C3EEA8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64EA9518E13B2300C3EEA8 /* Reachability.m */; };
+		EE92BCAB189D5F890096AF99 /* UtsaCsNewsArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = EE92BCAA189D5F890096AF99 /* UtsaCsNewsArticle.m */; };
+		EE92BCB3189D60A10096AF99 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = EE92BCAE189D60A10096AF99 /* TFHpple.m */; };
+		EE92BCB4189D60A10096AF99 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EE92BCB0189D60A10096AF99 /* TFHppleElement.m */; };
+		EE92BCB5189D60A10096AF99 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EE92BCB2189D60A10096AF99 /* XPathQuery.m */; };
+		EE92BCB7189D613F0096AF99 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE92BCB6189D613F0096AF99 /* libxml2.dylib */; };
+		EE92BCBA189D6DE10096AF99 /* UtsaCsNewsArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE92BCB9189D6DE10096AF99 /* UtsaCsNewsArticleViewController.m */; };
+		EE947C4918D6557C00A566A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE947C4818D6557C00A566A4 /* AudioToolbox.framework */; };
 		EEA9855F189359400098262F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA9855E189359400098262F /* Foundation.framework */; };
 		EEA98561189359400098262F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA98560189359400098262F /* CoreGraphics.framework */; };
 		EEA98563189359400098262F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA98562189359400098262F /* UIKit.framework */; };
@@ -21,6 +31,11 @@
 		EEA98580189359410098262F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA98562189359400098262F /* UIKit.framework */; };
 		EEA98588189359410098262F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEA98586189359410098262F /* InfoPlist.strings */; };
 		EEA9858A189359410098262F /* UTSA_Computer_ScienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA98589189359410098262F /* UTSA_Computer_ScienceTests.m */; };
+		EEA985951895EB010098262F /* UtsaCsNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA985941895EB010098262F /* UtsaCsNotificationsViewController.m */; };
+		EEA9859818962A7E0098262F /* UtsaCsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA9859718962A7E0098262F /* UtsaCsFeedViewController.m */; };
+		EED659701901F7FD00749860 /* UtsaCsOpportunitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED6596F1901F7FD00749860 /* UtsaCsOpportunitiesViewController.m */; };
+		EEF62EBC192AF56C003DD1FE /* UtsaCsOpportunitiesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF62EBB192AF56C003DD1FE /* UtsaCsOpportunitiesDetailViewController.m */; };
+		EEFDFA9219302F94000BDEA6 /* UtsaCsOpportunity.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFDFA9119302F94000BDEA6 /* UtsaCsOpportunity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B2B42C52E9344FAB666F89A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A978FB0C3116440B821D3D44 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE64EA9218E138D700C3EEA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EE64EA9418E13B2200C3EEA8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EE64EA9518E13B2300C3EEA8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EE92BCA9189D5F890096AF99 /* UtsaCsNewsArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtsaCsNewsArticle.h; sourceTree = "<group>"; };
+		EE92BCAA189D5F890096AF99 /* UtsaCsNewsArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtsaCsNewsArticle.m; sourceTree = "<group>"; };
+		EE92BCAD189D60A10096AF99 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		EE92BCAE189D60A10096AF99 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		EE92BCAF189D60A10096AF99 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		EE92BCB0189D60A10096AF99 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		EE92BCB1189D60A10096AF99 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		EE92BCB2189D60A10096AF99 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		EE92BCB6189D613F0096AF99 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EE92BCB8189D6DE10096AF99 /* UtsaCsNewsArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtsaCsNewsArticleViewController.h; sourceTree = "<group>"; };
+		EE92BCB9189D6DE10096AF99 /* UtsaCsNewsArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtsaCsNewsArticleViewController.m; sourceTree = "<group>"; };
+		EE947C4818D6557C00A566A4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		EEA9855B189359400098262F /* UTSA Computer Science.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UTSA Computer Science.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA9855E189359400098262F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEA98560189359400098262F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +85,16 @@
 		EEA98585189359410098262F /* UTSA Computer ScienceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UTSA Computer ScienceTests-Info.plist"; sourceTree = "<group>"; };
 		EEA98587189359410098262F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EEA98589189359410098262F /* UTSA_Computer_ScienceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTSA_Computer_ScienceTests.m; sourceTree = "<group>"; };
+		EEA985931895EB010098262F /* UtsaCsNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtsaCsNotificationsViewController.h; sourceTree = "<group>"; };
+		EEA985941895EB010098262F /* UtsaCsNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtsaCsNotificationsViewController.m; sourceTree = "<group>"; };
+		EEA9859618962A7E0098262F /* UtsaCsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtsaCsFeedViewController.h; sourceTree = "<group>"; };
+		EEA9859718962A7E0098262F /* UtsaCsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtsaCsFeedViewController.m; sourceTree = "<group>"; };
+		EED6596E1901F7FD00749860 /* UtsaCsOpportunitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtsaCsOpportunitiesViewController.h; sourceTree = "<group>"; };
+		EED6596F1901F7FD00749860 /* UtsaCsOpportunitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtsaCsOpportunitiesViewController.m; sourceTree = "<group>"; };
+		EEF62EBA192AF56C003DD1FE /* UtsaCsOpportunitiesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtsaCsOpportunitiesDetailViewController.h; sourceTree = "<group>"; };
+		EEF62EBB192AF56C003DD1FE /* UtsaCsOpportunitiesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtsaCsOpportunitiesDetailViewController.m; sourceTree = "<group>"; };
+		EEFDFA9019302F94000BDEA6 /* UtsaCsOpportunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtsaCsOpportunity.h; sourceTree = "<group>"; };
+		EEFDFA9119302F94000BDEA6 /* UtsaCsOpportunity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtsaCsOpportunity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +102,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE64EA9318E138D700C3EEA8 /* SystemConfiguration.framework in Frameworks */,
+				EE947C4918D6557C00A566A4 /* AudioToolbox.framework in Frameworks */,
+				EE92BCB7189D613F0096AF99 /* libxml2.dylib in Frameworks */,
 				EEA98561189359400098262F /* CoreGraphics.framework in Frameworks */,
 				EEA98563189359400098262F /* UIKit.framework in Frameworks */,
 				EEA9855F189359400098262F /* Foundation.framework in Frameworks */,
+				C3C114ABFE074F1E866B2865 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +125,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE3DCAB019034EF700B3B7B4 /* News Feed View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE92BCB8189D6DE10096AF99 /* UtsaCsNewsArticleViewController.h */,
+				EE92BCB9189D6DE10096AF99 /* UtsaCsNewsArticleViewController.m */,
+				EEA9859618962A7E0098262F /* UtsaCsFeedViewController.h */,
+				EEA9859718962A7E0098262F /* UtsaCsFeedViewController.m */,
+			);
+			name = "News Feed View Controllers";
+			sourceTree = "<group>";
+		};
+		EE3DCAB119034F1B00B3B7B4 /* Opportunities View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEF62EBA192AF56C003DD1FE /* UtsaCsOpportunitiesDetailViewController.h */,
+				EEF62EBB192AF56C003DD1FE /* UtsaCsOpportunitiesDetailViewController.m */,
+				EED6596E1901F7FD00749860 /* UtsaCsOpportunitiesViewController.h */,
+				EED6596F1901F7FD00749860 /* UtsaCsOpportunitiesViewController.m */,
+			);
+			name = "Opportunities View Controller";
+			sourceTree = "<group>";
+		};
+		EE3DCAB219034F4800B3B7B4 /* Notifications Preferences View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEA985931895EB010098262F /* UtsaCsNotificationsViewController.h */,
+				EEA985941895EB010098262F /* UtsaCsNotificationsViewController.m */,
+			);
+			name = "Notifications Preferences View Controller";
+			sourceTree = "<group>";
+		};
+		EE64EA8E18E1383400C3EEA8 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EE64EA9418E13B2200C3EEA8 /* Reachability.h */,
+				EE64EA9518E13B2300C3EEA8 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		EE92BCA8189D5F2F0096AF99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE92BCA9189D5F890096AF99 /* UtsaCsNewsArticle.h */,
+				EE92BCAA189D5F890096AF99 /* UtsaCsNewsArticle.m */,
+				EEFDFA9019302F94000BDEA6 /* UtsaCsOpportunity.h */,
+				EEFDFA9119302F94000BDEA6 /* UtsaCsOpportunity.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EE92BCAC189D60700096AF99 /* HTML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				EE92BCAD189D60A10096AF99 /* TFHpple.h */,
+				EE92BCAE189D60A10096AF99 /* TFHpple.m */,
+				EE92BCAF189D60A10096AF99 /* TFHppleElement.h */,
+				EE92BCB0189D60A10096AF99 /* TFHppleElement.m */,
+				EE92BCB1189D60A10096AF99 /* XPathQuery.h */,
+				EE92BCB2189D60A10096AF99 /* XPathQuery.m */,
+			);
+			name = "HTML Parser";
+			sourceTree = "<group>";
+		};
 		EEA98552189359400098262F = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +196,7 @@
 				EEA98583189359410098262F /* UTSA Computer ScienceTests */,
 				EEA9855D189359400098262F /* Frameworks */,
 				EEA9855C189359400098262F /* Products */,
+				3B2B42C52E9344FAB666F89A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +212,14 @@
 		EEA9855D189359400098262F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE64EA9218E138D700C3EEA8 /* SystemConfiguration.framework */,
+				EE947C4818D6557C00A566A4 /* AudioToolbox.framework */,
+				EE92BCB6189D613F0096AF99 /* libxml2.dylib */,
 				EEA9855E189359400098262F /* Foundation.framework */,
 				EEA98560189359400098262F /* CoreGraphics.framework */,
 				EEA98562189359400098262F /* UIKit.framework */,
 				EEA9857D189359410098262F /* XCTest.framework */,
+				A978FB0C3116440B821D3D44 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,9 +227,15 @@
 		EEA98564189359400098262F /* UTSA Computer Science */ = {
 			isa = PBXGroup;
 			children = (
+				EE64EA8E18E1383400C3EEA8 /* Reachability */,
+				EE92BCAC189D60700096AF99 /* HTML Parser */,
+				EE92BCA8189D5F2F0096AF99 /* Model */,
+				EE3DCAB019034EF700B3B7B4 /* News Feed View Controllers */,
+				EE3DCAB219034F4800B3B7B4 /* Notifications Preferences View Controller */,
+				EE3DCAB119034F1B00B3B7B4 /* Opportunities View Controller */,
+				EEA98570189359400098262F /* Main.storyboard */,
 				EEA9856D189359400098262F /* UtsaCsAppDelegate.h */,
 				EEA9856E189359400098262F /* UtsaCsAppDelegate.m */,
-				EEA98570189359400098262F /* Main.storyboard */,
 				EEA98573189359400098262F /* UtsaCsViewController.h */,
 				EEA98574189359400098262F /* UtsaCsViewController.m */,
 				EEA98576189359400098262F /* Images.xcassets */,
@@ -159,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEA9858D189359410098262F /* Build configuration list for PBXNativeTarget "UTSA Computer Science" */;
 			buildPhases = (
+				A5FC5A9292B94CB59AAD2FA5 /* Check Pods Manifest.lock */,
 				EEA98557189359400098262F /* Sources */,
 				EEA98558189359400098262F /* Frameworks */,
 				EEA98559189359400098262F /* Resources */,
+				3FC6DAC23516490F88658529 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +320,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = UtsaCs;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "University of Texas at San Antonio";
 				TargetAttributes = {
+					EEA9855A189359400098262F = {
+						DevelopmentTeam = 89E45G282U;
+					};
 					EEA9857B189359410098262F = {
 						TestTargetID = EEA9855A189359400098262F;
 					};
@@ -245,14 +371,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FC6DAC23516490F88658529 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5FC5A9292B94CB59AAD2FA5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEA98557189359400098262F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EEA9856B189359400098262F /* main.m in Sources */,
+				EE92BCAB189D5F890096AF99 /* UtsaCsNewsArticle.m in Sources */,
+				EEFDFA9219302F94000BDEA6 /* UtsaCsOpportunity.m in Sources */,
+				EE92BCB5189D60A10096AF99 /* XPathQuery.m in Sources */,
+				EEF62EBC192AF56C003DD1FE /* UtsaCsOpportunitiesDetailViewController.m in Sources */,
 				EEA98575189359400098262F /* UtsaCsViewController.m in Sources */,
+				EEA985951895EB010098262F /* UtsaCsNotificationsViewController.m in Sources */,
+				EE92BCBA189D6DE10096AF99 /* UtsaCsNewsArticleViewController.m in Sources */,
+				EED659701901F7FD00749860 /* UtsaCsOpportunitiesViewController.m in Sources */,
 				EEA9856F189359400098262F /* UtsaCsAppDelegate.m in Sources */,
+				EE92BCB4189D60A10096AF99 /* TFHppleElement.m in Sources */,
+				EEA9859818962A7E0098262F /* UtsaCsFeedViewController.m in Sources */,
+				EE64EA9618E13B2300C3EEA8 /* Reachability.m in Sources */,
+				EE92BCB3189D60A10096AF99 /* TFHpple.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +476,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -345,7 +514,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -376,26 +544,44 @@
 		};
 		EEA9858E189359410098262F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2B42C52E9344FAB666F89A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UTSA Computer Science/UTSA Computer Science-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "UTSA Computer Science/UTSA Computer Science-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		EEA9858F189359410098262F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2B42C52E9344FAB666F89A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UTSA Computer Science/UTSA Computer Science-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "UTSA Computer Science/UTSA Computer Science-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -403,7 +589,6 @@
 		EEA98591189359410098262F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UTSA Computer Science.app/UTSA Computer Science";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -426,7 +611,6 @@
 		EEA98592189359410098262F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UTSA Computer Science.app/UTSA Computer Science";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -461,6 +645,7 @@
 				EEA9858F189359410098262F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEA98590189359410098262F /* Build configuration list for PBXNativeTarget "UTSA Computer ScienceTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +654,7 @@
 				EEA98592189359410098262F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

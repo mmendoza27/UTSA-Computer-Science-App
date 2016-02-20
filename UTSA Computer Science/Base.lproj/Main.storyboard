@@ -1,23 +1,261 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nmN-s2-Ucj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Utsa Cs Feed View Controller - News Feed-->
+        <scene sceneID="QEJ-TQ-nOX">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="UtsaCsViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="dxB-5O-yGw" customClass="UtsaCsFeedViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YlX-ez-TeM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="News Article Cell" textLabel="7ei-jn-REn" detailTextLabel="1Er-hp-IaC" style="IBUITableViewCellStyleSubtitle" id="jgo-V2-Dfb">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jgo-V2-Dfb" id="Y8z-7T-tLa">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="31" id="7ei-jn-REn">
+                                            <rect key="frame" x="15" y="5" width="31" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Er-hp-IaC">
+                                            <rect key="frame" x="15" y="25" width="30" height="14"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="NuP-og-oEc" kind="push" identifier="Article View" id="u8W-q5-xKi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="News Feed" id="ZFk-tJ-SNj"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="xmO-wE-whp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refreshContent" destination="dxB-5O-yGw" eventType="valueChanged" id="hd0-x2-XQV"/>
+                        </connections>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgN-Hu-PNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="-444"/>
+        </scene>
+        <!--Utsa Cs News Article View Controller-->
+        <scene sceneID="HJd-S4-crH">
+            <objects>
+                <viewController id="NuP-og-oEc" customClass="UtsaCsNewsArticleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mTy-rO-TJW"/>
+                        <viewControllerLayoutGuide type="bottom" id="lRf-dd-X63"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tI1-Cx-yCS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2r-Ai-7CH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" calendarEvent="YES"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p2r-Ai-7CH" firstAttribute="leading" secondItem="tI1-Cx-yCS" secondAttribute="leading" id="F3V-B0-C9I"/>
+                            <constraint firstItem="p2r-Ai-7CH" firstAttribute="top" secondItem="tI1-Cx-yCS" secondAttribute="top" id="WNb-U0-5Ue"/>
+                            <constraint firstAttribute="bottom" secondItem="p2r-Ai-7CH" secondAttribute="bottom" id="oLD-nr-NZT"/>
+                            <constraint firstAttribute="trailing" secondItem="p2r-Ai-7CH" secondAttribute="trailing" id="xBJ-Dv-nHi"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TfI-LX-jMt"/>
+                    <connections>
+                        <outlet property="newsArticleWebView" destination="p2r-Ai-7CH" id="jtu-ty-Wdc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGp-tI-Cab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1241" y="-444"/>
+        </scene>
+        <!--Navigation Controller - News Feed-->
+        <scene sceneID="PsJ-E6-Wkc">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="7lQ-Wa-WGI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News Feed" image="NewsFeed" id="IHe-93-EGV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l0O-2l-7Q7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dxB-5O-yGw" kind="relationship" relationship="rootViewController" id="D1t-Q1-UqK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMd-IM-B64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="-444"/>
+        </scene>
+        <!--Utsa Cs View Controller-->
+        <scene sceneID="5ts-lh-jpo">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="nmN-s2-Ucj" customClass="UtsaCsViewController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QOe-JS-Odq">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7lQ-Wa-WGI" kind="relationship" relationship="viewControllers" id="eHn-dN-hLl"/>
+                        <segue destination="4BJ-t1-b5P" kind="relationship" relationship="viewControllers" id="iPl-3x-huO"/>
+                        <segue destination="uwq-Bc-9hK" kind="relationship" relationship="viewControllers" id="d5g-Q1-gcl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LA-e3-z1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="240"/>
+        </scene>
+        <!--Utsa Cs Opportunities View Controller - Opportunities-->
+        <scene sceneID="elK-L8-5ax">
+            <objects>
+                <tableViewController id="xHu-Gp-CMj" customClass="UtsaCsOpportunitiesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="hkE-UN-aIu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Opportunities Cell" id="tLn-z3-F4i">
+                                <rect key="frame" x="0.0" y="119" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tLn-z3-F4i" id="nRX-DA-tIU">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="0vl-h1-Jk4" kind="push" identifier="Opportunity Details" id="qFX-r0-bsz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xHu-Gp-CMj" id="Qy0-hB-0lD"/>
+                            <outlet property="delegate" destination="xHu-Gp-CMj" id="nbL-7X-uUi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Opportunities" id="qWw-Ka-hSM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Om2-MA-aBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="240"/>
+        </scene>
+        <!--Utsa Cs Opportunities Detail View Controller-->
+        <scene sceneID="vlJ-pf-QfB">
+            <objects>
+                <viewController id="0vl-h1-Jk4" customClass="UtsaCsOpportunitiesDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vq4-on-pnz"/>
+                        <viewControllerLayoutGuide type="bottom" id="vMH-YP-7l9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MSv-Jy-Xlp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Details View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6z-Ov-K0x">
+                                <rect key="frame" x="20" y="94" width="280" height="395"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a6z-Ov-K0x" firstAttribute="leading" secondItem="MSv-Jy-Xlp" secondAttribute="leading" constant="15" id="2Vg-Iz-NQ5"/>
+                            <constraint firstItem="a6z-Ov-K0x" firstAttribute="top" secondItem="vq4-on-pnz" secondAttribute="bottom" constant="15" id="XCd-mU-JIA"/>
+                            <constraint firstItem="vMH-YP-7l9" firstAttribute="top" secondItem="a6z-Ov-K0x" secondAttribute="bottom" constant="15" id="XGz-jO-veM"/>
+                            <constraint firstAttribute="trailing" secondItem="a6z-Ov-K0x" secondAttribute="trailing" constant="15" id="wfm-Lx-kOm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LOY-Vh-TmO"/>
+                    <connections>
+                        <outlet property="opportunityDetailsLabel" destination="a6z-Ov-K0x" id="hHX-SJ-laZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Be-PB-qqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="240"/>
+        </scene>
+        <!--Navigation Controller - Opportunities-->
+        <scene sceneID="CMk-3V-51b">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="4BJ-t1-b5P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Opportunities" image="Opportunities" id="a3k-bP-gyO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2De-bN-V8Y">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xHu-Gp-CMj" kind="relationship" relationship="rootViewController" id="wZq-rg-sCw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDh-Ou-Vsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="240"/>
+        </scene>
+        <!--Utsa Cs Notifications View Controller - Notifications Preferences-->
+        <scene sceneID="Kha-RG-KHB">
+            <objects>
+                <tableViewController id="COM-IX-oqQ" customClass="UtsaCsNotificationsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ref-ou-1cB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Push Notification Cell" id="HjC-2g-oVf">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HjC-2g-oVf" id="orr-zu-Fde">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Notifications Preferences" id="nbs-b3-FoA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVJ-7A-dIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="935"/>
+        </scene>
+        <!--Navigation Controller - Notifications-->
+        <scene sceneID="ZFV-7t-kRa">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="uwq-Bc-9hK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="PushNotifications" id="TUS-cl-TQ1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nKK-P7-hrB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="COM-IX-oqQ" kind="relationship" relationship="rootViewController" id="bfE-Ee-40g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTH-Lf-Y3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="935"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NewsFeed" width="25" height="25"/>
+        <image name="Opportunities" width="25" height="25"/>
+        <image name="PushNotifications" width="25" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
